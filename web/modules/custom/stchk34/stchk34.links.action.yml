@@ -1,0 +1,5 @@
+entity.stchk34_entity.add_form:
+  route_name: entity.stchk34_entity.add_form
+  title: 'Add Stchk34entity'
+  appears_on:
+    - entity.stchk34_entity.collection

@@ -1,0 +1,31 @@
+stchk34_entity:
+  path: '/stchk34/stchk34_entity'
+  defaults:
+    _controller: '\Drupal\stchk34\Controller\stchk34Controller::content'
+    _title: 'Guest book'
+  requirements:
+    _permission: 'access content'
+
+entity.stchk34_entity.canonical:
+  path: '/stchk34/stchk34_entity/{stchk34_entity}'
+  defaults:
+    _entity_view: 'stchk34_entity'
+    _title: 'Review itself'
+  requirements:
+    _permission: 'administer site configuration'
+
+entity.stchk34_entity.edit:
+  path: '/stchk34/stchk34_entity/{stchk34_entity}/edit'
+  defaults:
+    _entity_form: 'stchk34_entity.default'
+    _title: 'Edit review'
+  requirements:
+    _permission: 'administer site configuration'
+
+entity.stchk34_entity.delete_form:
+  path: '/stchk34/stchk34_entity/{stchk34_entity}/delete'
+  defaults:
+    _entity_form: 'stchk34_entity.delete'
+    _title: 'Delete review'
+  requirements:
+    _permission: 'administer site configuration'

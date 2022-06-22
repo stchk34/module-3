@@ -1,0 +1,20 @@
+add stchk34entity entities:
+  title: 'Create new Stchk34entity entities'
+
+administer stchk34entity entities:
+  title: 'Administer Stchk34entity entities'
+  description: 'Allow to access the administration form to configure Stchk34entity entities.'
+  restrict access: true
+
+delete stchk34entity entities:
+  title: 'Delete Stchk34entity entities'
+
+edit stchk34entity entities:
+  title: 'Edit Stchk34entity entities'
+
+view published stchk34entity entities:
+  title: 'View published Stchk34entity entities'
+
+view unpublished stchk34entity entities:
+  title: 'View unpublished Stchk34entity entities'
+

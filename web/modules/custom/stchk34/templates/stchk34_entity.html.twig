@@ -1,0 +1,26 @@
+{{ attach_library('stchk34/stchk34_library') }}
+<div class="user_table">
+  <div class="user_info">
+    <div class="user_left">
+      <div class="review_avatar">{{ content.avatar }}</div>
+    </div>
+    <div class="user_right">
+      <p class="review_name">{{ content.name }}</p>
+      <p class="review_email">{{ content.email }}</p>
+      <p class="review_phone">{{ content.phone }}</p>
+      {% if user.hasPermission('administer nodes') %}
+        <div class="review_buttons">
+          {{ button }}
+        </div>
+      {% endif %}
+      <p class="review_date">{{ content.date }}</p>
+    </div>
+  </div>
+  <div class="user_content">
+    <p class="review_message">{{ content.message }}</p>
+    {% if content.image != NULL %}
+      <div class="review_image">{{ content.image }}</div>
+    {% endif %}
+  </div>
+</div>
+

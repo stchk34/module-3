@@ -1,0 +1,14 @@
+
+# Stchk34entity menu items definition
+entity.stchk34_entity.collection:
+  title: 'Stchk34entity list'
+  route_name: entity.stchk34_entity.collection
+  description: 'List Stchk34entity entities'
+  parent: system.admin_structure
+  weight: 100
+
+stchk34_entity.admin.structure.settings:
+  title: 'Stchk34entity settings'
+  description: 'Configure Stchk34entity entities'
+  route_name: stchk34_entity.settings
+  parent: system.admin_structure
